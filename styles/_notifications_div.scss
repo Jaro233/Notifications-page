@@ -1,0 +1,34 @@
+.notification_div {
+    display: flex;
+    gap: 0.625rem;
+    flex-grow: 1;
+    
+    .notification_text {
+        font-weight: 800;
+    }
+
+    .number_of_notifications {
+        background-color: hsl(219, 85%, 26%);
+        text-align: center;
+        font-size: 0.8125rem;
+        color: white;
+        padding-left: 0.4375rem;
+        padding-right: 0.4375rem;
+        padding-top: 0.125rem;
+        border-radius: 0.3125rem;
+    }
+
+    .mark_all_as_read {
+        margin-left: auto;
+        color: hsl(219, 12%, 42%);
+        font-size: 0.875rem;
+        cursor: pointer;
+        &:hover {
+            color: hsl(219, 85%, 26%);
+        }
+    }
+    
+
+    margin-bottom: 1.5625rem;
+    
+}

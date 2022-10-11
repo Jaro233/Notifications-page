@@ -1,0 +1,141 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+.notification_div {
+  display: flex;
+  gap: 0.625rem;
+  flex-grow: 1;
+  margin-bottom: 1.5625rem;
+}
+.notification_div .notification_text {
+  font-weight: 800;
+}
+.notification_div .number_of_notifications {
+  background-color: hsl(219deg, 85%, 26%);
+  text-align: center;
+  font-size: 0.8125rem;
+  color: white;
+  padding-left: 0.4375rem;
+  padding-right: 0.4375rem;
+  padding-top: 0.125rem;
+  border-radius: 0.3125rem;
+}
+.notification_div .mark_all_as_read {
+  margin-left: auto;
+  color: hsl(219deg, 12%, 42%);
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+.notification_div .mark_all_as_read:hover {
+  color: hsl(219deg, 85%, 26%);
+}
+
+.unread_notification {
+  background-color: hsl(210deg, 60%, 98%);
+}
+
+.notification {
+  margin-bottom: 0.625rem;
+  border-radius: 0.5rem;
+  display: flex;
+  padding: 0.8125rem;
+  gap: 0.9375rem;
+  color: hsl(219deg, 12%, 42%);
+}
+.notification img {
+  max-width: 2.375rem;
+  height: 100%;
+}
+.notification .chess_img {
+  justify-self: end;
+  margin-left: auto;
+  cursor: pointer;
+}
+.notification .chess_img:hover {
+  border: 0.125rem solid hsl(205deg, 33%, 90%);
+  border-radius: 0.4375rem;
+}
+.notification #name {
+  font-weight: 800;
+  color: black;
+  cursor: pointer;
+}
+.notification #name:hover {
+  color: hsl(219deg, 85%, 26%);
+}
+.notification #gray {
+  font-weight: 800;
+  cursor: pointer;
+}
+.notification #gray:hover {
+  color: hsl(219deg, 85%, 26%);
+}
+.notification #blue {
+  color: hsl(219deg, 85%, 26%);
+  font-weight: 800;
+  cursor: pointer;
+}
+.notification .time {
+  color: hsl(219deg, 14%, 63%);
+}
+.notification p {
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+.notification .my_text::after {
+  content: "•";
+  color: red;
+  margin-left: 0.3125rem;
+}
+.notification .no_after::after {
+  content: "";
+}
+.notification .notification_content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3125rem;
+}
+.notification .message {
+  border: 0.0625rem solid hsl(205deg, 33%, 90%);
+  border-radius: 0.1875rem;
+  padding: 0.625rem;
+  margin-top: 0.3125rem;
+  cursor: pointer;
+}
+.notification .message:hover {
+  background-color: hsl(205deg, 33%, 90%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html p, body p {
+  font-size: 1rem;
+}
+
+main {
+  padding: 1.25rem;
+  max-width: 36.25rem;
+}
+
+@media screen and (min-width: 600px) {
+  html, body {
+    background-color: hsl(210deg, 60%, 98%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main {
+    background-color: white;
+  }
+}/*# sourceMappingURL=style.css.map */

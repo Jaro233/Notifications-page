@@ -1,0 +1,92 @@
+@import "./variables";
+
+
+.unread_notification {
+    background-color: hsl(210, 60%, 98%);
+}
+
+.notification {
+    margin-bottom: 0.625rem;
+    border-radius: 0.5rem;
+    display: flex;
+    padding: 0.8125rem;
+    gap: 0.9375rem;
+    color: hsl(219deg, 12%, 42%);
+
+    img {
+        max-width: 2.375rem;
+        height: 100%;
+    }
+
+    .chess_img {
+        justify-self: end;
+        margin-left: auto;
+        cursor: pointer;
+        &:hover {
+            border: 0.125rem solid hsl(205, 33%, 90%);
+            border-radius: 0.4375rem;
+        }
+    }
+
+    #name {
+        font-weight: 800;
+        color: black;
+        cursor: pointer;
+        &:hover {
+            color: hsl(219, 85%, 26%);
+        }
+    }
+
+    #gray {
+        font-weight: 800;
+        cursor: pointer;
+        &:hover {
+            color: hsl(219, 85%, 26%);
+        }
+    }
+
+    #blue {
+        color: $blueCol;
+        font-weight: 800;
+        cursor: pointer;
+    }
+
+    .time {
+        // margin-top: 0.3125rem;
+        color: $timeCol;
+    }
+
+    p {
+        font-size: 0.8125rem;
+        font-weight: 500;
+    }
+
+    .my_text::after {
+        content: "•"; 
+        color: red;
+        margin-left: 0.3125rem;
+        // display: inline-block;
+        // width: 10px; 
+        // height: 20px;
+    }
+
+    .no_after::after{content:"";}
+
+    .notification_content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3125rem;
+    }
+
+    .message {
+        border: 0.0625rem solid hsl(205, 33%, 90%);
+        border-radius: 0.1875rem;
+        padding: 0.625rem;
+        margin-top: 0.3125rem;
+        cursor: pointer;
+        &:hover {
+            background-color: hsl(205, 33%, 90%);
+        }
+    }
+}
+
